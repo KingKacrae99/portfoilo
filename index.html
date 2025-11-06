@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>King Kacrae — Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home">King Kacrae</a>
+            <button id="navToggle" class="nav-toggle" aria-label="toggle menu">☰</button>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-inner container">
+                <div class="hero-left">
+                    <div class="avatar-wrap">
+                        <!-- Put your image at images/profile.jpg or change src -->
+                        <img src="images/profile.jpg" alt="King Kacrae" class="hero-img"
+                            onerror="this.style.display='none';document.querySelector('.initials').style.display='flex'">
+                        <div class="initials">KK</div>
+                        <div class="glow-ring"></div>
+                    </div>
+
+                    <h1 class="name">Hi, I’m <span>King Kacrae</span></h1>
+                    <p class="role">Full-Stack, Software & Smart Contract Developer</p>
+
+                    <p class="typed" aria-live="polite"></p>
+
+                    <div class="hero-ctas">
+                        <a class="btn" href="#contact">Hire Me</a>
+                        <a class="btn outline" href="#projects">View Projects</a>
+                    </div>
+
+                    <div class="socials small">
+                        <!-- replace hrefs with your links -->
+                        <a href="https://github.com/KingKacrae99" target="_blank" title="GitHub" aria-label="GitHub">
+                            <img src="images/icons8-github.svg" alt="GitHub">
+                        </a>
+                        <a href="#" title="LinkedIn" target="_blank" aria-label="LinkedIn">
+                            <img src="images/icons8-linkedin.svg" alt="LinkedIn">
+                        </a>
+                        <a href="#" target="_blank" title="Twitter" aria-label="Twitter">
+                            <img src="images/icons8-x-60.svg" alt="X">
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <img src="images/icons8-instagram-logo-60.svg" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="card intro-card reveal">
+                        <h3>About me</h3>
+                        <p>Specialize in practical solutions using both frontend and backend technologies designed to
+                            solve real-world problems. Currently pursuing a BSc at BYU-Idaho through Pathway, majoring
+                            in Software Development.</p>
+                        <ul class="meta">
+                            <li><strong>Location</strong><span>Nigeria</span></li>
+                            <li><strong>Available:</strong>
+                                <span> Remote-Job(Full-Time) Freelance & Internship</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card highlights reveal">
+                        <h4>Expertise</h4>
+                        <div class="chips">
+                            <span>Web Development,</span>
+                            <span>API Development,</span>
+                            <span>Smart Contracts,</span>
+                            <span>Solidity,</span>
+                            <span>JavaScript (Node.JS) / Django (Python)</span>
+                        </div>
+                        <div class="framework">
+                            <h5>Database</h5>
+                            <span>MySQL, </span>
+                            <span>Postgre, </span>
+                            <span>MongoDB </span>
+                        </div>
+                        <div class="framework">
+                            <h5>Framework</h5>
+                            <span>Bootstrap, </span>
+                            <span>Tailwind, </span>
+                            <span>ExpressJS, </span>
+                            <span>NextJS,</span>
+                            <span>Django</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section services">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">Services</h2>
+                <p class="section-sub">What I can help with — practical, deployable solutions</p>
+
+                <div class="grid three">
+                    <article class="service-card reveal" data-aos="fade-right" data-aos-delay="100">
+                        <div class="icon">🌐</div>
+                        <h3>Web Development</h3>
+                        <p>Responsive frontend & production-ready backends. HTML, CSS, JS, React, EJS, ExpressJS, NextJS, Django.</p>
+                    </article>
+
+                    <article class="service-card reveal" data-aos="fade-down" data-aos-delay="200">
+                        <div class="icon">🔗</div>
+                        <h3>API Development & Integration</h3>
+                        <p>Design, document, and integrate RESTful APIs. Auth, tokens, and third-party integrations.</p>
+                    </article>
+
+                    <article class="service-card reveal" data-aos="fade-left" data-aos-delay="300">
+                        <div class="icon">🛡️</div>
+                        <h3>Smart Contract Development</h3>
+                        <p>Solidity contracts, testing, deployment, and simple dApp frontends. Security-first approach.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section projects" >
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-sub">A few select projects — screenshots. 
+                    <strong>Note:</strong> New projects coming soon
+                </p>
+                <div class="grid three reveal">
+                    <a href="https://kingkacrae99.github.io/wdd231/finalproject/index.html" 
+                       target="_blank" 
+                       class="project"
+                       data-aos="fade-left" data-aos-delay="100">
+                        <div class="project-img">
+                            <img src="images/drug-verification.webp" loading="lazy" alt="Drug Verification">
+                        </div>
+                        <h4>Drug Verification System</h4>
+                        <p>Vanilla.JS & FDI API — verification & lookup demo.</p>
+                    </a>
+                    <a href="http://127.0.0.1:8000/" 
+                       target="_blank" 
+                       class="project"
+                       data-aos="fade-left" 
+                       data-aos-delay="200">
+                        <div class="project-img">
+                           <img src="images/careercompass.png" loading="lazy" alt="careercompass image">
+                        </div>
+                        <h4>CareerCompass</h4>
+                        <p>Django project for career assessment & recommendations; Responses generated  by AI</p>
+                    </a>
+                    <a href="https://github.com/KingKacrae99/Solidity-Project" 
+                       target="_blank" 
+                       class="project"
+                       data-aos="fade-left"
+                       data-aos-delay="300">
+                        <div class="project-img">
+                            <img src="images/smartcontract.webp" loading="lazy" alt="Escrow Contact">
+                        </div>
+                        <h4>Smart Contract Demo</h4>
+                        <p>
+                            Simple Solidity supply-chain with ERC20 token Ownership & minting, Escrow  and tracking
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS (placeholder) -->
+        <section class="section testimonials" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+                <h2 class="section-title">Testimonials</h2>
+                <p class="section-sub">What clients say</p>
+
+                <div class="grid three reveal">
+                    <blockquote class="testimonial">
+                        <p>"Great work and fast communication."</p>
+                        <cite>— Client Name</cite>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"Delivered on time, code was clean."</p>
+                        <cite>— Client Name</cite>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"Helped integrate APIs quickly."</p>
+                        <cite>— Client Name</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-sub">Let's build something practical — I take internships & freelance work.</p>
+
+                <div class="contact-grid">
+                    <form class="contact-form reveal" action="mailto:youremail@example.com" method="post"
+                        enctype="text/plain">
+                        <label>
+                            <span>Name</span>
+                            <input type="text" name="name" required>
+                        </label>
+
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email" required>
+                        </label>
+
+                        <label>
+                            <span>Message</span>
+                            <textarea name="message" rows="5" required></textarea>
+                        </label>
+
+                        <div class="form-actions">
+                            <button class="btn" type="submit">Send</button>
+                            <a class="btn outline" href="mailto:youremail@example.com">Email Me</a>
+                        </div>
+                    </form>
+
+                    <div class="contact-info reveal">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li>BYU-Idaho Pathway — Software Dev</li>
+                            <li>Available for internships & remote work</li>
+                            <li>Languages: English</li>
+                        </ul>
+
+                        <h4>Social</h4>
+                        <div class="socials">
+                            <!-- Replace with your links -->
+                            <a href="https://github.com/KingKacrae99" target="_blank" aria-label="GitHub">
+                                <img src="images/icons8-github.svg" alt="github">
+                            </a>
+                            <a href="#" target="_blank" aria-label="LinkedIn">
+                                <img src="images/icons8-linkedin.svg" alt="LinkedIn">
+                            </a>
+                            <a href="#" target="_blank" aria-label="Twitter">
+                                <img src="images/icons8-x-60.svg" alt="X">
+                            </a>
+                            <a href="#" target="_blank" aria-label="Instagram">
+                                <img src="images/icons8-instagram-logo-60.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> King Kacrae Emmanuel Aguomba — Built with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
