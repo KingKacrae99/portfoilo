@@ -16,7 +16,8 @@
 
 html,
 body {
-    height: 100%
+    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -254,7 +255,8 @@ body {
 
 /* sections */
 .section {
-    padding: 56px 0
+    padding: 56px 0;
+    width:100%;
 }
 
 .section-title {
@@ -563,7 +565,8 @@ body {
         padding-top: 12px
     }
     .hero-left{
-        margin-top: 2rem;
+        margin-top: 0rem;
+        text-align: center;
     }
     .hero-right {
         width: 100%;
