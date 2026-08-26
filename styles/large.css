@@ -1,0 +1,166 @@
+.filters {
+    display: flex;
+    gap: 10px;
+    margin: 18px 0 28px;
+}
+
+.filter-btn {
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    color: #001;
+    font-weight: 700;
+    box-shadow: 0 8px 30px rgba(0, 240, 222, 0.08);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.project-card {
+    background: var(--card);
+    padding: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.project-card figcaption {
+    padding: 6px 2px;
+    color: var(--muted);
+}
+
+.project-tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 6px 8px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    font-size: 12px;
+    color: var(--muted);
+    text-decoration: none;
+}
+
+
+/* =========================================
+   ICON LINKS
+========================================= */
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--muted);
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.icon-link svg {
+    display: block;
+}
+
+
+/* =========================================
+   GLIGHTBOX
+========================================= */
+
+.glightbox_overlay {
+    background: rgba(2, 6, 8, 0.95) !important;
+}
+
+.glightbox_slide .ginner {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.glightbox_container .gprev,
+.glightbox_container .gnext {
+    color: var(--accent);
+}
+
+
+/* =========================================
+   PROJECT RESPONSIVENESS
+========================================= */
+
+@media (max-width: 980px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================================
+   LARGE / MOBILE OVERRIDES
+========================================= */
+
+@media (max-width: 900px) {
+    .hero-inner {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 12px;
+    }
+
+    .hero-left {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .hero-right {
+        width: 100%;
+        max-width: 740px;
+    }
+
+    .avatar-wrap {
+        justify-self: center;
+        align-self: center;
+        width: 190px;
+        height: 190px;
+    }
+
+    .hero-img {
+        object-fit: contain;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hero-ctas {
+        justify-self: center;
+        align-self: center;
+    }
+}
